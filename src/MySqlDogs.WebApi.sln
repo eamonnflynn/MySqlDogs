@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySqlDogs.WebApi", "MySqlDogs.WebApi\MySqlDogs.WebApi.csproj", "{56E7587B-0946-4095-A172-8702CCC64F83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySqlDogs.Core", "MySqlDogs.Core\MySqlDogs.Core.csproj", "{62314DA3-548B-4298-9571-1D047A6BE201}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySqlDogs.Data", "MySqlDogs.Data\MySqlDogs.Data.csproj", "{08F95B1F-2AC9-4D0A-82B8-DA4527D6D3D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySqlDogs.Application", "MySqlDogs.Application\MySqlDogs.Application.csproj", "{3C4F7092-F81B-4959-8D25-DC1922462AE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Default|Any CPU = Default|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56E7587B-0946-4095-A172-8702CCC64F83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56E7587B-0946-4095-A172-8702CCC64F83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56E7587B-0946-4095-A172-8702CCC64F83}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{56E7587B-0946-4095-A172-8702CCC64F83}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{56E7587B-0946-4095-A172-8702CCC64F83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56E7587B-0946-4095-A172-8702CCC64F83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62314DA3-548B-4298-9571-1D047A6BE201}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62314DA3-548B-4298-9571-1D047A6BE201}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62314DA3-548B-4298-9571-1D047A6BE201}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{62314DA3-548B-4298-9571-1D047A6BE201}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{62314DA3-548B-4298-9571-1D047A6BE201}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62314DA3-548B-4298-9571-1D047A6BE201}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08F95B1F-2AC9-4D0A-82B8-DA4527D6D3D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08F95B1F-2AC9-4D0A-82B8-DA4527D6D3D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08F95B1F-2AC9-4D0A-82B8-DA4527D6D3D8}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{08F95B1F-2AC9-4D0A-82B8-DA4527D6D3D8}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{08F95B1F-2AC9-4D0A-82B8-DA4527D6D3D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08F95B1F-2AC9-4D0A-82B8-DA4527D6D3D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C4F7092-F81B-4959-8D25-DC1922462AE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C4F7092-F81B-4959-8D25-DC1922462AE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C4F7092-F81B-4959-8D25-DC1922462AE1}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C4F7092-F81B-4959-8D25-DC1922462AE1}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{3C4F7092-F81B-4959-8D25-DC1922462AE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C4F7092-F81B-4959-8D25-DC1922462AE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3125D85D-083F-4896-B653-5F6DC839D8C8}
+	EndGlobalSection
+EndGlobal
