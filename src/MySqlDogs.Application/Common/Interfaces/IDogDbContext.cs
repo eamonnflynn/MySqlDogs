@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using MySqlDogs.Core;
+using MySqlDogs.Core.Entites;
 
 namespace MySqlDogs.Application.Common.Interfaces
 {

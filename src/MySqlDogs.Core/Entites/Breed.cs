@@ -1,4 +1,4 @@
-﻿namespace MySqlDogs.Core
+﻿namespace MySqlDogs.Core.Entites
 {
     public class Breed
     {
@@ -6,6 +6,7 @@
         public string Name { get; set; }
 
         public DogGroupId GroupId { get; set; }
+
         public virtual DogGroup  Group { get; set; }
        
     }

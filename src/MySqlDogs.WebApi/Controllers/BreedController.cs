@@ -3,8 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 using MySqlDogs.Application.Breeds.Commands.Create;
 using MySqlDogs.Application.Breeds.Commands.Delete;
 using MySqlDogs.Application.Breeds.Commands.Update;
+using MySqlDogs.Application.Breeds.Queries;
 using MySqlDogs.Application.Breeds.Queries.Get;
+using MySqlDogs.Application.Breeds.Queries.GetByGroup;
 using MySqlDogs.Application.Breeds.Queries.GetPaged;
+using MySqlDogs.Core.Entites;
 
 namespace MySqlDogs.WebApi.Controllers
 {
@@ -19,6 +22,11 @@ namespace MySqlDogs.WebApi.Controllers
             return await Mediator.Send(new GetBreedPagedQuery(pageindex, pageSize));
         }
 
+        [HttpGet("{groupId}")]
+        public async Task<ActionResult<BreedPagedVm>> GetByGroupPaged(DogGroupId groupId, int pageindex, int pageSize)
+        {
+            return await Mediator.Send(new GetBreedByGroupPagedQuery(groupId,pageindex, pageSize));
+        }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<BreedDto>> Get(int id)

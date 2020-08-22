@@ -5,14 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Dogs\Commands\Create\" />
-    <Folder Include="Dogs\Commands\Delete\" />
-    <Folder Include="Dogs\Commands\Update\" />
-    <Folder Include="Dogs\Queries\Get\" />
-    <Folder Include="Dogs\Queries\GetPaged\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.0.0" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
     <PackageReference Include="FluentValidation" Version="9.1.2" />

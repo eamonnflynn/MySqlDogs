@@ -1,6 +1,6 @@
 ﻿namespace MySqlDogs.Application.Breeds.Commands.Update
 {
-    class UpdateBreedCommandValidator
+    public class UpdateBreedCommandValidator
     {
     }
 }

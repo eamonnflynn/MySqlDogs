@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using MySqlDogs.Application.Common.Interfaces;
-using MySqlDogs.Core;
+using MySqlDogs.Core.Entites;
 
 namespace MySqlDogs.Data
 {

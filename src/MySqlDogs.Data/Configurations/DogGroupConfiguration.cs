@@ -2,7 +2,7 @@
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using MySqlDogs.Core;
+using MySqlDogs.Core.Entites;
 
 namespace MySqlDogs.Data.Configurations
 {
@@ -10,6 +10,7 @@ namespace MySqlDogs.Data.Configurations
     {
         public void Configure(EntityTypeBuilder<DogGroup> builder)
         {
+           
             builder.Property(e => e.DogGroupId).HasConversion<int>();
             builder.HasData(
 

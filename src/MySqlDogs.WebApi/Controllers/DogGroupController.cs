@@ -2,11 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using MySqlDogs.Application.DogGroups.Queries.Get;
 using MySqlDogs.Application.DogGroups.Queries.GetPaged;
-using MySqlDogs.Core;
+using MySqlDogs.Core.Entites;
 
 namespace MySqlDogs.WebApi.Controllers
 {
-  
+
     [ApiController]
     [Route("api/[controller]/[action]")]
     public class DogGroupController : ApiController

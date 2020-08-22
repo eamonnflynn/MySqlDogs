@@ -2,6 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using MySqlDogs.Application.Common.Interfaces;
@@ -22,7 +23,7 @@ namespace MySqlDogs.Application.DogGroups.Queries.Get
         public async Task<DogGroupDto> Handle(GetDogGroupQuery request, CancellationToken cancellationToken)
         {
             return await _context.Groups.Where(b => b.DogGroupId == request.Id)
-                .Select(s=> new DogGroupDto(){Id = (int) s.DogGroupId, Name = s.Name}).FirstOrDefaultAsync(cancellationToken: cancellationToken);
+                .ProjectTo<DogGroupDto>(_mapper.ConfigurationProvider).FirstOrDefaultAsync(cancellationToken: cancellationToken);
         }
     }
 }

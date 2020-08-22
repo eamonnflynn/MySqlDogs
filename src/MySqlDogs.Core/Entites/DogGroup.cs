@@ -1,4 +1,4 @@
-﻿namespace MySqlDogs.Core
+﻿namespace MySqlDogs.Core.Entites
 {
     public enum DogGroupId :int
     {

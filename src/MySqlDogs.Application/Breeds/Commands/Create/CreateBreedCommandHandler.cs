@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using MediatR;
 using MySqlDogs.Application.Common.Interfaces;
-using MySqlDogs.Core;
+using MySqlDogs.Core.Entites;
 
 namespace MySqlDogs.Application.Breeds.Commands.Create
 {

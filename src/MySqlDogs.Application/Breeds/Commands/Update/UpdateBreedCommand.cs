@@ -1,5 +1,5 @@
 ﻿using MediatR;
-using MySqlDogs.Core;
+using MySqlDogs.Core.Entites;
 
 namespace MySqlDogs.Application.Breeds.Commands.Update
 {

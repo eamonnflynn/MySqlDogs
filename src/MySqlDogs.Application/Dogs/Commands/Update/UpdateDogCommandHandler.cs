@@ -5,18 +5,20 @@ using MySqlDogs.Application.Common.Exceptions;
 using MySqlDogs.Application.Common.Interfaces;
 using MySqlDogs.Core.Entites;
 
-namespace MySqlDogs.Application.Breeds.Commands.Update
+namespace MySqlDogs.Application.Dogs.Commands.Update
 {
-    public class UpdateBreedCommandHandler : IRequestHandler<UpdateBreedCommand>
+   
+
+    public class UpdateDogCommandHandler : IRequestHandler<UpdateDogCommand>
     {
         private readonly IDogDbContext _context;
-        public UpdateBreedCommandHandler(IDogDbContext context)
+        public UpdateDogCommandHandler(IDogDbContext context)
         {
             _context = context;
         }
-        public async Task<Unit> Handle(UpdateBreedCommand request, CancellationToken cancellationToken)
+        public async Task<Unit> Handle(UpdateDogCommand request, CancellationToken cancellationToken)
         {
-            var entity = await _context.Breeds.FindAsync(request.Id);
+            var entity = await _context.Dogs.FindAsync(request.Id);
 
             if (entity == null)
             {
@@ -24,8 +26,9 @@ namespace MySqlDogs.Application.Breeds.Commands.Update
             }
 
             entity.Name = request.Name;
-            entity.GroupId = request.GroupId;
-        
+            entity.Age = request.Age;
+            entity.BreedId = request.BreedId;
+            entity.Colour = request.Colour;
 
             await _context.SaveChangesAsync(cancellationToken);
 

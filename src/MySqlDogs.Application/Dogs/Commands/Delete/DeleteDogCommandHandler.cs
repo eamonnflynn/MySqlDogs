@@ -5,25 +5,26 @@ using MySqlDogs.Application.Common.Exceptions;
 using MySqlDogs.Application.Common.Interfaces;
 using MySqlDogs.Core.Entites;
 
-namespace MySqlDogs.Application.Breeds.Commands.Delete
+namespace MySqlDogs.Application.Dogs.Commands.Delete
 {
-    public class DeleteBreedCommandHandler : IRequestHandler<DeleteBreedCommand>
+    
+    public class DeleteDogCommandHandler : IRequestHandler<DeleteDogCommand>
     {
         private readonly IDogDbContext _context;
-        public DeleteBreedCommandHandler(IDogDbContext context)
+        public DeleteDogCommandHandler(IDogDbContext context)
         {
             _context = context;
         }
-        public async Task<Unit> Handle(DeleteBreedCommand request, CancellationToken cancellationToken)
+        public async Task<Unit> Handle(DeleteDogCommand request, CancellationToken cancellationToken)
         {
-            var entity = await _context.Breeds.FindAsync(request.Id);
+            var entity = await _context.Dogs.FindAsync(request.Id);
 
             if (entity == null)
             {
-                throw new NotFoundException(nameof(Breed), request.Id);
+                throw new NotFoundException(nameof(Dog), request.Id);
             }
 
-            _context.Breeds.Remove(entity);
+            _context.Dogs.Remove(entity);
 
             await _context.SaveChangesAsync(cancellationToken);
 
